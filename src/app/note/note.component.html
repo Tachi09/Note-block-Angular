@@ -1,0 +1,12 @@
+<h2>{{note.name}}</h2>
+<div>
+    <label for="name">Name: </label>
+    <input id="name" [(ngModel)]="note.name" placeholder="name">
+</div>
+<span>id: </span>{{note.id}} <br>
+<div>
+    <label for="text">Text: </label><br>
+    <textarea id="text" [(ngModel)]="note.text" placeholder="text"></textarea>
+</div>
+<span>create date: </span>{{note.creation_date}} <br>
+<span>edit date: </span>{{note.edit_date}} 
