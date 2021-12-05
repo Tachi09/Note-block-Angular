@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Note_detail } from '../note-detail'
+import { Note_detail } from '../note-detail';
+import { NOTES } from '../mock-notes';
 
 @Component({
   selector: 'app-note',
@@ -7,17 +8,17 @@ import { Note_detail } from '../note-detail'
   styleUrls: ['./note.component.css']
 })
 export class NoteComponent implements OnInit {
-  note: Note_detail = {
-    id : 1,
-    name : 'Poznámka č. 1',
-    text : 'Tohle je první poznámka, která tu vznikla a funguje jako test.',
-    creation_date : '4.12.2021',
-    edit_date : 'none'
-  }
-  
+
+  notes = NOTES;
+  selectedNote?: Note_detail;
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  onSelect(note: Note_detail): void {
+    this.selectedNote = note;
   }
 }
 
