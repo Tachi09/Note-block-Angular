@@ -1,6 +1,6 @@
-import { Note_detail } from './note-detail'
+import { Note } from './note'
 
-export const NOTES: Note_detail[] = [
+export const NOTES: Note[] = [
     {id:1, name: 'pzn č.1', text: 'test1', creation_date: '1.1.2002', edit_date: 'none'},
     {id:2, name: 'pzn č.2', text: 'test2', creation_date: '2.1.2002', edit_date: 'none'},
     {id:3, name: 'pzn č.3', text: 'test3', creation_date: '3.1.2002', edit_date: 'none'},
