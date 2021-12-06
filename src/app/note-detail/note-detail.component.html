@@ -1,0 +1,15 @@
+<div *ngIf="note">
+    <h2>{{note.name}} ({{note.id}})</h2>
+    <br>
+    <div>
+        <label for="name">Name: </label><br>
+        <input id="name" [(ngModel)]="note.name" placeholder="name">
+    </div>
+    <br>
+    <div>
+        <label for="text">Text: </label><br>
+        <textarea id="text" [(ngModel)]="note.text" placeholder="text"></textarea>
+    </div>
+    <span class="created">create date: {{note.creation_date}}</span> <br>
+    <span class="edited">edit date: {{note.edit_date}}</span>
+</div>
