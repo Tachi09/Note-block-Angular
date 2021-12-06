@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Note_detail } from '../note-detail';
+import { Note } from '../note';
 import { NOTES } from '../mock-notes';
 
 @Component({
@@ -10,14 +10,14 @@ import { NOTES } from '../mock-notes';
 export class NoteComponent implements OnInit {
 
   notes = NOTES;
-  selectedNote?: Note_detail;
+  selectedNote?: Note;
 
   constructor() { }
 
   ngOnInit(): void {
   }
 
-  onSelect(note: Note_detail): void {
+  onSelect(note: Note): void {
     this.selectedNote = note;
   }
 }

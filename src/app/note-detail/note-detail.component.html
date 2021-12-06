@@ -1,0 +1,16 @@
+<div *ngIf="note">
+    <h2>{{selectedNote.name}} ({{selectedNote.id}})</h2>
+    <br>
+    <div>
+        <label for="name">Name: </label><br>
+        <input id="name" [(ngModel)]="selectedNote.name" placeholder="name">
+    </div>
+    <br>
+    <div>
+        <label for="text">Text: </label><br>
+        <textarea id="text" [(ngModel)]="selectedNote.text" placeholder="text"></textarea>
+    </div>
+    <span class="created">create date: {{selectedNote.creation_date}}</span> <br>
+    <span class="edited">edit date: {{selectedNote.edit_date}}</span>
+</div>
+<app-note-detail [note]="selectedNote"></app-note-detail>
