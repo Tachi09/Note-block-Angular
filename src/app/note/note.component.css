@@ -2,4 +2,36 @@
     float: left;
     height: 100vh;
     width: 20vw;
+    border: solid;
+    margin-right: 10px;
+}
+.note_detail{
+    border: solid;
+    height: 100vh;
+}
+.notes table{
+    width: 100%;
+    border: none;
+    border-collapse: collapse;
+}
+.notes .date{font-size: small;}
+.notes .name {font-weight: bold;}
+.notes tr:nth-child(even) {background: #979797}
+.notes tr:nth-child(odd) {background: #C5C5C5}
+
+.note_detail input{
+    width: 70vw;
+    height: 30px;
+    font-size: large;
+    border: none;
+    border-bottom: 1px solid #979797;
+}
+
+.note_detail label{
+    font-weight: bold;
+}
+.note_detail textarea{
+    width: 70vw;
+    height: 75vh;
+    font-size: large;
 }

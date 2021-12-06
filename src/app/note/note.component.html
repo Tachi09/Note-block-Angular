@@ -1,22 +1,27 @@
 <div class="notes">
     <h2>My notes</h2>
-    <ul>
-        <li *ngFor='let note of notes' [class.selected]='note === selectedNote' (click)="onSelect(note)">
-            <span class="badge">{{note.id}}</span> {{note.name}}
-        </li>
-    </ul>
+    <br>
+    <table>
+        <tr *ngFor='let note of notes' [class.selected]='note === selectedNote' (click)="onSelect(note)">
+            <td class="properties">
+                <span class="name">{{note.name}}</span> <br> 
+                <span class="date">{{note.creation_date}}</span>
+            </td>
+        </tr>
+    </table>
 </div>
 <div class="note_detail" *ngIf='selectedNote'>
-    <h2>{{selectedNote.name}}</h2>
+    <h2>{{selectedNote.name}} ({{selectedNote.id}})</h2>
+    <br>
     <div>
-        <label for="name">Name: </label>
+        <label for="name">Name: </label><br>
         <input id="name" [(ngModel)]="selectedNote.name" placeholder="name">
     </div>
-    <span>id: </span>{{selectedNote.id}} <br>
+    <br>
     <div>
         <label for="text">Text: </label><br>
         <textarea id="text" [(ngModel)]="selectedNote.text" placeholder="text"></textarea>
     </div>
-    <span>create date: </span>{{selectedNote.creation_date}} <br>
-    <span>edit date: </span>{{selectedNote.edit_date}}
+    <span class="created">create date: {{selectedNote.creation_date}}</span> <br>
+    <span class="edited">edit date: {{selectedNote.edit_date}}</span>
 </div>
