@@ -4,8 +4,10 @@
     <table>
         <tr *ngFor='let note of notes' [class.selected]='note === selectedNote' (click)="onSelect(note)">
             <td class="properties">
-                <span class="name">{{note.name}}</span> <br> 
-                <span class="date">{{note.creation_date}}</span>
+                <a routerLink="/detail/{{note.id}}">
+                    <span class="name">{{note.name}}</span> <br>
+                    <span class="date">{{note.creation_date}}</span>
+                </a>
             </td>
         </tr>
     </table>
