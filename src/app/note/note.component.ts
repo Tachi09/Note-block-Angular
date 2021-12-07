@@ -10,18 +10,12 @@ import { NoteService } from '../note.service';
 })
 export class NoteComponent implements OnInit {
 
-  selectedNote?: Note;
   notes: Note[] = [];
 
-  constructor(private noteService: NoteService, private messageService: MessageService) { }
+  constructor(private noteService: NoteService) { }
 
   ngOnInit(): void {
     this.getNotes();
-  }
-
-  onSelect(note: Note): void{
-    this.selectedNote = note;
-    this.messageService.add(`NoteComponent: Selected note id=${note.id}`);
   }
 
   getNotes(): void {
