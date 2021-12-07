@@ -11,5 +11,7 @@
         <textarea id="text" [(ngModel)]="note.text" placeholder="text"></textarea>
     </div>
     <span class="created">create date: {{note.creation_date}}</span> <br>
-    <span class="edited">edit date: {{note.edit_date}}</span>
+    <span class="edited">edit date: {{note.edit_date}}</span> <br>
+    <button (click)="goBack()">Back</button>
 </div>
+

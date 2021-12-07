@@ -15,4 +15,10 @@ export class NoteService {
     this.messageService.add('NoteService: fetched notes');
     return notes;
   }
+
+  getNote(id: number): Observable<Note> {
+    const note = NOTES.find( h=> h.id === id)!;
+    this.messageService.add(`NoteService: fetched note id=${id}`);
+    return of(note);
+  } 
 }

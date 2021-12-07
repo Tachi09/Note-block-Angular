@@ -2,7 +2,7 @@
     <h2>My notes</h2>
     <br>
     <table>
-        <tr *ngFor='let note of notes' [class.selected]='note === selectedNote' (click)="onSelect(note)">
+        <tr *ngFor='let note of notes'>
             <td class="properties">
                 <a routerLink="/detail/{{note.id}}">
                     <span class="name">{{note.name}}</span> <br>
@@ -12,4 +12,3 @@
         </tr>
     </table>
 </div>
-<app-note-detail [note]="selectedNote"></app-note-detail>

@@ -2,6 +2,8 @@
   <h1>{{title}}</h1>
 </div>
 <div class="overview">
-  <app-note></app-note>
+  <a routerLink="/notes">Notes</a> <br>
+ <!-- <a routerLink="/new_note">New note</a> //-->
+  <router-outlet></router-outlet>
   <app-messages></app-messages>
 </div>
