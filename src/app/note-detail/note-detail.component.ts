@@ -8,7 +8,7 @@ import {Note} from '../note';
 })
 export class NoteDetailComponent implements OnInit {
   
-  @Input() note?: Note;
+  @Input() note?: Note | undefined;
   constructor() { }
 
   ngOnInit(): void {

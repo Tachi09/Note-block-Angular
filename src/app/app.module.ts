@@ -6,12 +6,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NoteComponent } from './note/note.component';
 import { NoteDetailComponent } from './note-detail/note-detail.component';
+import { MessagesComponent } from './messages/messages.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NoteComponent,
-    NoteDetailComponent
+    NoteDetailComponent,
+    MessagesComponent
   ],
   imports: [
     BrowserModule,
