@@ -6,7 +6,7 @@
             <td class="properties">
                 <a routerLink="/detail/{{note.id}}">
                     <span class="name">{{note.name}}</span> <br>
-                    <span class="date">{{note.creation_date}}</span>
+                    <span class="date">{{note.creation_date | date: "mediumDate"}}</span>
                 </a>
             </td>
             <td>
