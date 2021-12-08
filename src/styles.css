@@ -21,3 +21,19 @@ button{
 button:hover{
     background-color: #3AAEA9;
 }
+
+input{
+    border: none;
+    border-bottom: 2px solid #17242A;
+    width: 50vw;
+    height: 30px;
+    font-size: large;
+    margin-top: 7px;
+  }
+
+  textarea{
+      margin-top: 7px;
+      width: 50%;
+      height: 50vh;
+      font-size: medium;
+  }
