@@ -30,4 +30,10 @@ export class NoteDetailComponent implements OnInit {
   goBack(): void{
     this.location.back();
   }
+
+  save(): void{
+    if(this.note){
+      this.noteService.updateNote(this.note).subscribe(() => this.goBack());
+    }
+  }
 }
