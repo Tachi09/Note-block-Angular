@@ -10,8 +10,7 @@
         <label for="text">Text: </label><br>
         <textarea id="text" [(ngModel)]="note.text" placeholder="text"></textarea>
     </div>
-    <span class="created">create date: {{note.creation_date}}</span> <br>
-    <span class="edited">edit date: {{note.edit_date}}</span> <br>
+    <span class="created">create: {{note.creation_date | date: "mediumDate" }}</span> <br>
+    <span class="edited">edit: {{note.edit_date | date: "mediumDate" }}</span> <br>
     <button (click)="goBack()">Back</button> &NoBreak; <button (click)="save()">Save</button>
 </div>
-
