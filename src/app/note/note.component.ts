@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { MessageService } from '../message.service';
 import { Note } from '../note';
 import { NoteService } from '../note.service';
 
@@ -21,6 +20,10 @@ export class NoteComponent implements OnInit {
   getNotes(): void {
     this.noteService.getNotes()
       .subscribe(notes => this.notes = notes);
+  }
+  delete(note: Note): void{
+    this.notes = this.notes.filter(h => h !== note);
+    this.noteService.deleteNote(note.id).subscribe();
   }
 }
 
