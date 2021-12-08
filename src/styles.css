@@ -6,3 +6,18 @@ h1{
     margin-left: 10px;
     color: #232323;
 }
+
+button{
+    width: 60px;
+    height: 30px;
+    margin-right: 10px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+    background-color: #DEF2F1;
+}
+
+button:hover{
+    background-color: #3AAEA9;
+}
