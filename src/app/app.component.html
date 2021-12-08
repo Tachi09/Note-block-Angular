@@ -1,9 +1,11 @@
-<div class="navbar">
-  <h1>{{title}}</h1>
-</div>
+<nav class="nav">
+  <div class="nav_title"><span routerLink="/notes">{{title}}</span></div>
+    <ul class="nav_list">
+      <li class="nav_item"><span routerLink="/notes">Notes</span></li>
+      <li class="nav_item"><span routerLink="/new-note">New note</span></li>
+    </ul>
+</nav>
 <div class="overview">
-  <a routerLink="/notes">Notes</a> <br>
-  <a routerLink="/new-note">New note</a>
   <router-outlet></router-outlet>
   <app-messages></app-messages>
 </div>

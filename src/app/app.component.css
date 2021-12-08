@@ -1,0 +1,52 @@
+app-messages {
+    visibility: hidden;
+}
+
+.nav span {
+    color: #17242A;
+    cursor: pointer;
+}
+
+.nav_title {
+    font-family: Palatino, "Palatino LT STD", "Palatino Linotype", "Book Antiqua", Georgia, serif;
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+.nav_item {
+    font-size: larger;
+    font-weight: bold;
+    padding-right: 40px;
+}
+
+li span {
+    padding: 14px 16px;
+}
+
+.nav_item span:hover {
+    background-color: #11BEA9;
+}
+
+.nav {
+    position: sticky;
+    background: #3AAEA9;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    top: 0;
+}
+
+.nav_title {
+    margin: 0px 30px;
+}
+
+.nav_item {
+    display: inline-block;
+    margin: 0px 30px;
+}
+
+.overview {
+    margin-left: 20px;
+    margin-top: 10px;
+}
