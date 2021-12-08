@@ -52,9 +52,9 @@ export class NoteService {
     );
   }
 
-  addHero(note: Note): Observable<Note> {
+  addNote(note: Note): Observable<Note> {
     return this.http.post<Note>(this.noteUrl, note, this.httpOption).pipe(
-      tap((newHero: Note) => this.log(`added new hero w/ id=${newHero.id}`)),
+      tap((newNote: Note) => this.log(`added new note w/ id=${newNote.id}`)),
       catchError(this.handleError<Note>('addNote'))
     );
   }

@@ -22,7 +22,7 @@ export class NewNoteFormComponent implements OnInit {
     text = text.trim();
     let creation_date = new Date();
     if (!name) { return; }
-    this.noteService.addHero({ name , text, creation_date} as Note)
+    this.noteService.addNote({ name , text, creation_date} as Note)
       .subscribe(note => {
         this.notes.push(note);
       });

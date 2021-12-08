@@ -1,17 +1,15 @@
-<div class="notes">
-    <h2>My notes</h2>
-    <br>
-    <table>
-        <tr *ngFor='let note of notes'>
-            <td class="properties">
-                <a routerLink="/detail/{{note.id}}">
-                    <span class="name">{{note.name}}</span> <br>
-                    <span class="date">{{note.creation_date | date: "mediumDate"}}</span>
-                </a>
-            </td>
-            <td>
-                <button class="delete"(click)="delete(note)">x</button>               
-            </td>
-        </tr>
-    </table>
-</div>
+<h2>My notes</h2>
+<br>
+<table>
+    <tr *ngFor='let note of notes'>
+        <td routerLink="/detail/{{note.id}}" class="properties">
+            <a>
+                <span class="name">{{note.name}}</span> <br>
+                <span class="date">{{note.creation_date | date: "mediumDate"}}</span>
+            </a>
+        </td>
+        <td class="delete-cell">
+            <button class="delete" (click)="delete(note)">x</button>
+        </td>
+    </tr>
+</table>

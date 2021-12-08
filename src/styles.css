@@ -2,16 +2,38 @@
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
-.navbar{
-    background-color: #277dd9;
-    width: 100%;
-    height: 100%;
-}
 h1{
     margin-left: 10px;
-    color: white;
+    color: #232323;
 }
-.overview{
-    margin-left: 10px;
-    margin-top: 10px;
+
+button{
+    width: 60px;
+    height: 30px;
+    margin-right: 10px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+    background-color: #DEF2F1;
 }
+
+button:hover{
+    background-color: #3AAEA9;
+}
+
+input{
+    border: none;
+    border-bottom: 2px solid #17242A;
+    width: 50vw;
+    height: 30px;
+    font-size: large;
+    margin-top: 7px;
+  }
+
+  textarea{
+      margin-top: 7px;
+      width: 50%;
+      height: 50vh;
+      font-size: medium;
+  }
