@@ -12,5 +12,7 @@
     </div>
     <span class="created">create: {{note.creation_date | date: "mediumDate" }}</span> <br>
     <span class="edited">edit: {{note.edit_date | date: "mediumDate" }}</span> <br>
-    <button (click)="goBack()">Back</button> &NoBreak; <button (click)="save()">Save</button>
+    <button (click)="goBack()">Back</button> 
+    <button (click)="save()">Save</button>
+    <button class="delete" (click)="delete(note)">Delete</button>
 </div>
